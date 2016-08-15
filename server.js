@@ -22,6 +22,8 @@ app.listen(PORT, function () {
 
 
 // webpack-dev-server on port 3001 for hot loading
+// Comment this out when deploying to heroku
+// and comment it in when developing
 // var webpack = require('webpack');
 // var WebpackDevServer = require('webpack-dev-server');
 // var config = require('./webpack.config.js');
