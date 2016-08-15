@@ -19,8 +19,8 @@ module.exports = {
     })
   ],
   output: {
-    path: __dirname,
-    filename: './public/bundle.js',
+    path: __dirname + '/temp-hot-loader',
+    filename: '../public/bundle.js',
     publicPath: '/'
   },
   resolve: {
