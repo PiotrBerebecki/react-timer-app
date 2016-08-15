@@ -2,6 +2,8 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: [
+    'webpack-dev-server/client?http://0.0.0.0:3001',
+    'webpack/hot/only-dev-server',
     'script!jquery/dist/jquery.min.js',
     'script!foundation-sites/dist/foundation.min.js',
     './app/app.jsx'
@@ -10,6 +12,7 @@ module.exports = {
     jquery: 'jQuery'
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.ProvidePlugin({
       '$': 'jquery',
       'jQuery': 'jquery'
@@ -17,7 +20,8 @@ module.exports = {
   ],
   output: {
     path: __dirname,
-    filename: './public/bundle.js'
+    filename: './public/bundle.js',
+    publicPath: '/'
   },
   resolve: {
     root: __dirname,
@@ -36,10 +40,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        loader: 'babel-loader',
-        query: {
-          presets: ['react', 'es2015', 'stage-0']
-        },
+        loaders: ['react-hot', 'babel-loader?presets[]=react,presets[]=es2015,presets[]=stage-0'],
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
       }
