@@ -2,3 +2,9 @@
   margin-top: 1rem;
   color: $page-title-color;
 }
+
+@media screen and (max-height: 479px) {
+  .page-title { 
+    margin-top: 0rem;
+  }
+}
