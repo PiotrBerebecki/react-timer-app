@@ -5,22 +5,11 @@
   position: absolute;  
   top: 50%;
   transform: translateY(-50%);
-  width: 18rem;
-  height: 18rem;
+  width: 14rem;
+  height: 14rem;
   background-color: $clock-bg-color;
   border: 2px solid $clock-border-color;
   border-radius: 50%;
-}
-
-@media screen and (max-height: 479px) {
-  .clock { 
-    position: static;
-    margin-top: 0rem; 
-    top: 0;
-    transform: none;
-    width: 4rem;
-    height: 4rem;
-  }
 }
 
 @media screen and (min-width: 640px) {
@@ -31,6 +20,24 @@
     transform: none;
     width: 14rem;
     height: 14rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .clock { 
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+@media screen and (max-height: 479px) {
+  .clock { 
+    position: static;
+    margin-top: 0rem; 
+    top: 0;
+    transform: none;
+    width: 4rem;
+    height: 4rem;
   }
 }
 
