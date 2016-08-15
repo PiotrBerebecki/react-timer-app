@@ -1,8 +1,6 @@
-@media screen and (max-width: 639px) {
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 80vh;
-  }
+.countdown-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
 }

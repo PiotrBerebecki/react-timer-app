@@ -1,0 +1,12 @@
+.countdown-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+  .countdown-form {
+    width: 20rem;
+  }
+}

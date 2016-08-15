@@ -1,7 +1,10 @@
 .controls {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  
+  margin-top: auto;
+  width: 100%; 
+
   .button {
     padding: .75rem;
     width: 49%;
@@ -10,6 +13,6 @@
 
 @media screen and (min-width: 640px) {
   .controls {
-    margin-top: 6.41rem;
+    width: 20rem;
   }
 }

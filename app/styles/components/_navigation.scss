@@ -16,3 +16,9 @@
     font-weight: bold;
   }
 }
+
+@media (max-width: 639px) {
+  .top-bar-right {
+    display: none;
+  }
+}
